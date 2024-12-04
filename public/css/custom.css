@@ -1,0 +1,345 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Fondo claro y limpio */
+    color: #34495E; /* Gris oscuro para texto principal */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el header y navegación */
+header {
+    background-color: #2C3E50; /* Azul oscuro para header */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFA500; /* Azul claro para hover */
+}
+
+/* Estilos para el main */
+main {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #2C3E50; /* Azul oscuro para el footer */
+    color: white;
+    text-align: center;
+    padding: 0.5px;
+    position: fixed; /* Cambiado a 'absolute' */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
+
+footer img {
+    max-width: 50px;
+    margin-bottom: 0.5px;
+}
+
+footer a {
+    color: white; /* Amarillo dorado */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFA500; /* Naranja para hover */
+}
+
+footer i {
+    font-size: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+    color: #FFA500; /* Naranja en hover */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .container > div {
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Asegura que el footer siempre quede al final si el contenido es pequeño */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    padding-bottom: 80px; /* Espacio suficiente para el footer */
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ECF0F1; /* Gris claro para el encabezado de tabla */
+    font-weight: bold;
+}
+
+td {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F9F9F9; /* Gris muy suave para filas alternadas */
+}
+
+/* Estilo para los enlaces y botones de acciones */
+a {
+    text-decoration: none;
+    color: #3498DB; /* Azul claro para enlaces */
+    font-weight: 500;
+}
+
+a:hover {
+    color: #2980B9; /* Azul más intenso para hover */
+}
+
+button {
+    background-color: #3498DB; /* Azul claro para botones */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980B9; /* Azul más oscuro para hover */
+}
+
+/* Estilos para el formulario de registro y edición */
+.registro-producto {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Blanco para fondo del formulario */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registro-producto h1 {
+    text-align: center;
+    color: #34495E; /* Gris oscuro para el título */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #3498DB; /* Azul claro para botones */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #2980B9; /* Azul más oscuro para hover */
+}
+
+/* Estilos de los botones de Registrar y Editar */
+button.registrar {
+    background-color: #27AE60; /* Verde suave para Registrar */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.registrar:hover {
+    background-color: #1E8449; /* Verde más oscuro para hover */
+}
+
+button.editar {
+    background-color: #F39C12; /* Naranja dorado para Editar */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.editar:hover {
+    background-color: #E67E22; /* Naranja más oscuro para hover */
+}
+
+/* Estilo para los mensajes de error */
+.error-message {
+    color: #E74C3C; /* Rojo tenue para errores */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.alert {
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #27AE60; /* Verde suave para éxito */
+    color: white;
+}
+
+.error {
+    background-color: #E74C3C; /* Rojo tenue para errores */
+    color: white;
+}
+
+/* Estilos para el formulario de contacto */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Blanco para fondo del formulario */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.btn-submit {
+    background-color: #27AE60; /* Verde suave para el botón de enviar */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btn-submit:hover {
+    background-color: #1E8449; /* Verde más oscuro para hover */
+}
